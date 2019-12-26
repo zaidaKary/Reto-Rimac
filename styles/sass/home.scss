@@ -1,0 +1,137 @@
+@import "_vars.scss";
+/*Importando fuentes*/
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: center;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main > div {
+  flex: 1;
+  height: 100vh;
+}
+.home {
+  height: -webkit-fill-available;
+  background: $rojo;
+  border-radius: 0% 0% 10%;
+  transform: skew(-2deg);
+  -webkit-transform-origin-y: top;
+}
+
+.presentation {
+  padding: 10% 20%;
+  color: #ffffff;
+}
+h2 {
+  font-family: $lato;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.logorimac {
+  border-bottom: 0.5px solid #ffffff;
+  padding: 5% 10%;
+}
+
+ul {
+  list-style-type: square;
+  list-style-image: url("/botiquin.png");
+  padding-bottom: 5%;
+}
+footer {
+  font-size: 12px;
+}
+.formhome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: $plomo;
+  strong {
+    color: $rojo;
+  }
+  form {
+    width: 52%;
+    padding: 10% 0%;
+    .form-dni {
+      display: flex;
+      width: 100%;
+      border: 1px solid #d4d5e8;
+      border-radius: 4px;
+      height: 56px;
+      margin-bottom: 5%;
+      padding-left: 5%;
+      outline: none;
+      input {
+        width: 80%;
+        padding-left: 5%;
+      }
+      select, option {
+        width: 20%;
+        border: none;
+        outline: none;
+      }
+    }
+    p > a {
+      color: $plomo;
+    }
+    button {
+      width: 206px;
+      height: 56px;
+      background: #ef3340;
+      border-radius: 6px;
+      border: none;
+      color: white;
+    }
+  }
+}
+.girlimage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  img {
+    width: 234.08px;
+    height: auto;
+  }
+}
+.dni-continuar {
+  display: flex;
+  align-items: center;
+  p {
+    color: #939DFF;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    padding-right: 18px;
+  }
+}
+.asegurar-otromas ul{
+
+    list-style-type: square;
+    list-style-image: url("/ic_add.png");
+    padding-bottom: 5%;
+}
+.add {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  p {
+    padding: 20px;
+  }
+}
