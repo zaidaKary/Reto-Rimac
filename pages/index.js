@@ -29,17 +29,17 @@ const Home = () => {
 )
 };
 
-Home.getInitialProps = async () => {
-  const res = await fetch("https://freestyle.getsandbox.com/dummy/obtenerdatospersona", {
-    method: "POST",
-  });
-  const data = await res.json();
+// Home.getInitialProps = async () => {
+//   const res = await fetch("https://freestyle.getsandbox.com/dummy/obtenerdatospersona", {
+//     method: "POST",
+//   });
+//   const data = await res.json();
 
-  console.log("resultado", data);
-  console.log("resultado", data.mensaje);
-  return {
-    shows: data,
-  };
-};
+//   console.log("resultado", data);
+//   console.log("resultado", data.mensaje);
+//   return {
+//     shows: data,
+//   };
+// };
 
 export default Home;
